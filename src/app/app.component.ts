@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Imovie } from './shared/models/movieInterface';
+import { movie } from './shared/const/movieArray';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MovieGallerytask';
+  public movieArray : Array<Imovie>=movie;
+  public searchMovie! : string;
+  
 }

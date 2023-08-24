@@ -1,0 +1,60 @@
+
+.logo{
+    height: 6rem;
+    img{
+        height: 100%;
+    }
+}
+
+input{
+    float: left;
+    margin-right: 30px;
+}
+
+.card{
+    height:31.25rem ;
+    position: relative;
+    margin-top: 1.225rem;
+    .img-fluid{
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        object-fit: cover;
+    
+    }
+
+    .movieInfo{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        background-color: rgb(4, 57, 114);
+        color: #fff;
+    }
+    span{
+        display: inline-block;
+        margin: -1.438rem;
+        
+    }
+    .overview{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 2.5rem;
+        transform: translateY(100%);
+        transition: all .4s ease-in-out;
+        display: none;
+    }
+}
+.card:hover .overview,
+.card:active .overview,
+.card:focus .overview{
+    
+display: block;
+transform: translateY(0);
+   
+
+}
